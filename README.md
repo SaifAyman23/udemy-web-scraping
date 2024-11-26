@@ -6,11 +6,6 @@
 
 ---
 
-## 🖼️ **Preview**  
-![Udemy Courses Banner](https://via.placeholder.com/800x200.png?text=Udemy+Course+Scraper)
-
----
-
 ## 📜 **Features**  
 - Scrape Udemy courses dynamically using **Selenium**.  
 - Extract key details like **Name**, **Description**, **Instructor**, **Rating**, **Price**, and more.  
