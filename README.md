@@ -68,13 +68,13 @@ Follow these steps to execute the scraper:
 The repository contains two main scripts:
 
 1. **`scraper.py`**: Scrapes Udemy course data using Selenium.
-2. **`process_data.py`**: Cleans the scraped data and stores it in a structured Pandas DataFrame.
+2. **`cleaner.py`**: Cleans the scraped data and stores it in a structured Pandas DataFrame.
 
 You can find these scripts in the repository and run them as follows:
 
 ```bash
 python scraper.py  # Scrapes Udemy course data
-python process_data.py  # Processes and formats the scraped data
+python cleaner.py  # Processes and formats the scraped data
 ```
 
 ---
