@@ -47,21 +47,14 @@ Follow these steps to execute the scraper:
 
 1. **Set up ChromeDriver**:  
    - Download the appropriate [ChromeDriver](https://chromedriver.chromium.org/downloads) version for your Chrome browser.  
-   - Place it in your project directory or specify its path in the script.  
 
-2. **Update the Script**:  
-   Replace this line in the script with the path to your `chromedriver` if it's not in your PATH:  
-   ```python
-   driver = webdriver.Chrome(executable_path="path/to/chromedriver")
-   ```
-
-3. **Run the Script**:  
+2. **Run the Script**:  
    Execute the Python script:  
    ```bash  
    python scraper.py  
    ```
 
-4. **Data Output**:  
+3. **Data Output**:  
    The raw scraped data will be saved in a file named `data.txt`.  
 
 ---
@@ -89,9 +82,7 @@ children = parent.find_elements(By.CLASS_NAME, 'course-list_card-layout-containe
 with open("data.txt", "w", encoding="utf-8") as file:  
     for child in children:  
         element = child.find_element(By.CLASS_NAME, "popper_popper__jZgEv").text  
-        file.write(element + "
-================================
-")  
+        file.write(element + "/\n================================/\n")  
 
 driver.quit()
 ```
@@ -106,36 +97,38 @@ driver.quit()
 The following script processes and cleans the scraped data to produce a structured DataFrame:  
 
 ```python
-import pandas as pd  
-import numpy as np  
+import pandas as pd
+import numpy as np
 
-# Read the raw data  
-with open("data.txt") as file:  
-    courses_list = file.read().split("================================")  
+courses_list = []
 
-# Split data into individual courses  
-courses_list = [x.split("
-") for x in courses_list if x.strip()]  
+with open("data.txt") as file:
+    courses_list = file.read().split("================================")
+    
+courses_list = [x.split("\n") for x in courses_list]
+del courses_list[-1]
 
-data = []  
-for course in courses_list:  
-    course = [x for x in course if x]  # Remove empty strings  
-    if course[-1] == "Bestseller":  
-        course[-1] = "Yes"  
-    else:  
-        course.append(np.nan)  
-
-    # Organize the data fields  
-    element = [course[0]]  # Course name  
-    element.extend(course[2:])  # Remaining details  
-    data.append(element)  
-
-# Define column names and create a DataFrame  
+data = []
+for course in courses_list:
+    element = []
+    del course[-1]
+    
+    if course[-1] == "Bestseller":
+            course[-1] = "Yes"
+    else:
+        course.append(np.nan)
+    for piece in course:
+        if isinstance(piece,str) and (piece in ("Instructor:", "Instructors:", "Current Price", "Original Price", "Current price", "Original price", "") or "Rating:" in piece):
+            continue
+        
+        element.append(piece)
+    data.append([element[0],*element[2:]])
+    
 columns = ["Name", "Description", "Instructor", "Rating", "Number of Ratings",  
            "Total Hours", "Number of Lectures", "Level", "Current Price",  
-           "Original Price", "Bestseller"]  
+           "Original Price", "Bestseller"]
 
-courses = pd.DataFrame(data, columns=columns)  
+courses = pd.DataFrame(data, columns=columns)
 print(courses)
 ```
 
@@ -165,9 +158,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📧 **Contact**  
 Have questions or suggestions? Feel free to reach out!  
-- **GitHub**: [YourUsername](https://github.com/YourUsername)  
-- **Email**: your.email@example.com  
+- **GitHub**: [SaifAyman23](https://github.com/SaifAyman23)  
+- **Email**: your.saifayman3021@gmail.com@example.com  
 
 ---
-
-![Footer Sticker](https://via.placeholder.com/400x100.png?text=Happy+Scraping%21)
