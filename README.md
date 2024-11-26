@@ -23,6 +23,15 @@
 
 ---
 
+## Why not use `BeautifulSoap`?
+`BeautifulSoup` is a great tool for parsing HTML and XML documents, but it's not the best choice for this task. Here's why:
+*   `BeautifulSoup` is designed for parsing HTML and XML documents, not JSON data.
+*   It's not optimized for parsing large JSON data, which can lead to performance issues. 
+
+The courses in **Udemy** are renderd dynamically using `JavaScript`, so we can't use `BeautifulSoap`.
+
+---
+
 ## 🚀 **Setup Instructions**  
 
 ### 1. Clone the Repository  
