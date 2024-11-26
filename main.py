@@ -19,7 +19,7 @@ parent = driver.find_element(By.CLASS_NAME, 'course-list_container__yXli8')
 # to retrieve all child elements
 children = parent.find_elements(By.CLASS_NAME, 'course-list_card-layout-container__F2SfZ')
 
-with open("example.txt", "w", encoding="utf-8") as file:
+with open("data.txt", "w", encoding="utf-8") as file:
     for child in children:
         element = child.find_element(By.CLASS_NAME, "popper_popper__jZgEv").text
         file.write(element)
