@@ -100,6 +100,6 @@ Contributions are welcome! Here's how you can help:
 ## 📧 **Contact**  
 Have questions or suggestions? Feel free to reach out!  
 - **GitHub**: [SaifAyman23](https://github.com/SaifAyman23)  
-- **Email**: your.saifayman3021@gmail.com@example.com  
+- **Email**: saifayman3021@gmail.com
 
 ---
