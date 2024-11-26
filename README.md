@@ -1,6 +1,6 @@
 
 # 🌟 **Udemy Course Scraper** 🌟  
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org) [![Selenium](https://img.shields.io/badge/Selenium-Automation-green.svg)](https://www.selenium.dev/) [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org) [![Selenium](https://img.shields.io/badge/Selenium-Automation-green.svg)](https://www.selenium.dev/) [![License](https://img.shields.io/badge/License-Apache-red.svg)](LICENSE)
 
 🚀 A Python-based scraper that extracts **Udemy courses** dynamically rendered with JavaScript. It utilizes **Selenium** for scraping and processes the data into a clean, organized DataFrame with **Pandas** for further analysis.
 
