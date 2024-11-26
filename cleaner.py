@@ -24,13 +24,6 @@ for course in courses_list:
         
         element.append(piece)
     data.append([element[0],*element[2:]])
-            
-for element in data:
-    for piece in element:
-        print(piece)
-    print("-------------------------------------------")
-
-
 
 courses = pd.DataFrame(data, columns=["Name", 
                                 "Description", 
