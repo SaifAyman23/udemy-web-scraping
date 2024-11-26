@@ -33,6 +33,7 @@
 ```bash  
 git clone https://github.com/yourusername/udemy-course-scraper.git  
 cd udemy-course-scraper  
+```
 
 ---
 
@@ -40,3 +41,4 @@ cd udemy-course-scraper
 To install the required libraries, run the following command:  
 ```bash
 pip install selenium pandas numpy
+```
