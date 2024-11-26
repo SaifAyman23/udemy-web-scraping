@@ -77,7 +77,7 @@ children = parent.find_elements(By.CLASS_NAME, 'course-list_card-layout-containe
 with open("data.txt", "w", encoding="utf-8") as file:  
     for child in children:  
         element = child.find_element(By.CLASS_NAME, "popper_popper__jZgEv").text  
-        file.write(element + "\\n================================\\n")  
+        file.write(element + "\n================================\n")  
 
 driver.quit()
 ```
@@ -100,7 +100,7 @@ courses_list = []
 with open("data.txt") as file:
     courses_list = file.read().split("================================")
     
-courses_list = [x.split("\\n") for x in courses_list]
+courses_list = [x.split("\n") for x in courses_list]
 del courses_list[-1]
 
 data = []
