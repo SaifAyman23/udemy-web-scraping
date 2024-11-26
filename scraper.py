@@ -19,9 +19,6 @@ children = parent.find_elements(By.CLASS_NAME, 'course-list_card-layout-containe
 with open("data.txt", "w", encoding="utf-8") as file:
     for child in children:
         element = child.find_element(By.CLASS_NAME, "popper_popper__jZgEv").text
-        file.write(element)
-        file.write('\n')
-        file.write("================================")
-        file.write('\n')
+        file.write(element + "\n================================\n") 
     
 driver.quit()
