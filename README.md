@@ -63,82 +63,19 @@ Follow these steps to execute the scraper:
 
 ---
 
-## 📝 **Code Explanation**
+## 📝 **Code Overview**
 
-### **Scraping the Data**  
-The following code uses **Selenium** to scrape dynamically rendered content:  
+The repository contains two main scripts:
 
-```python
-from selenium import webdriver  
-from selenium.webdriver.common.by import By  
+1. **`scraper.py`**: Scrapes Udemy course data using Selenium.
+2. **`process_data.py`**: Cleans the scraped data and stores it in a structured Pandas DataFrame.
 
-driver = webdriver.Chrome()  
-driver.get("https://www.udemy.com/courses/development/data-science/")  
+You can find these scripts in the repository and run them as follows:
 
-# Wait for the page to load completely  
-driver.implicitly_wait(10)  
-
-# Locate the course list container and extract child elements  
-parent = driver.find_element(By.CLASS_NAME, 'course-list_container__yXli8')  
-children = parent.find_elements(By.CLASS_NAME, 'course-list_card-layout-container__F2SfZ')  
-
-# Save the extracted data into a text file  
-with open("data.txt", "w", encoding="utf-8") as file:  
-    for child in children:  
-        element = child.find_element(By.CLASS_NAME, "popper_popper__jZgEv").text  
-        file.write(element + "\n================================\n")  
-
-driver.quit()
+```bash
+python scraper.py  # Scrapes Udemy course data
+python process_data.py  # Processes and formats the scraped data
 ```
-
-- **`implicitly_wait(10)`**: Ensures all elements are loaded before proceeding.  
-- **Find Elements**: Identifies the container of courses and iterates over child elements to extract data.  
-- **Save Data**: Writes the raw scraped text to `data.txt`.  
-
----
-
-### **Cleaning and Organizing Data**  
-The following script processes and cleans the scraped data to produce a structured DataFrame:  
-
-```python
-import pandas as pd
-import numpy as np
-
-courses_list = []
-
-with open("data.txt") as file:
-    courses_list = file.read().split("================================")
-    
-courses_list = [x.split("\n") for x in courses_list]
-del courses_list[-1]
-
-data = []
-for course in courses_list:
-    element = []
-    del course[-1]
-    
-    if course[-1] == "Bestseller":
-            course[-1] = "Yes"
-    else:
-        course.append(np.nan)
-    for piece in course:
-        if isinstance(piece,str) and (piece in ("Instructor:", "Instructors:", "Current Price", "Original Price", "Current price", "Original price", "") or "Rating:" in piece):
-            continue
-        
-        element.append(piece)
-    data.append([element[0],*element[2:]])
-    
-columns = ["Name", "Description", "Instructor", "Rating", "Number of Ratings",  
-           "Total Hours", "Number of Lectures", "Level", "Current Price",  
-           "Original Price", "Bestseller"]
-
-courses = pd.DataFrame(data, columns=columns)
-print(courses)
-```
-
-- **Raw Data Reading**: Loads the `data.txt` file and splits it by the delimiter `================================`.  
-- **Cleaning**: Filters out unnecessary details and fills missing values.  
-- **DataFrame Creation**: Converts the cleaned data into a well-organized Pandas DataFrame.  
 
 ---
 

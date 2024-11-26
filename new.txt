@@ -9,10 +9,6 @@ Rating: 4.5 out of 5
 43 total hours
 387 lectures
 All Levels
-Current price
-E£249.99
-Original Price
-E£2,099.99
 Bestseller
 ================================
 Python for Data Science and Machine Learning Bootcamp
@@ -26,10 +22,6 @@ Rating: 4.6 out of 5
 25 total hours
 165 lectures
 All Levels
-Current price
-E£349.99
-Original Price
-E£2,799.99
 ================================
 The Data Science Course: Complete Data Science Bootcamp 2024
 Complete Data Science Training: Math, Statistics, Python, Advanced Statistics in Python, Machine and Deep Learning
@@ -42,10 +34,6 @@ Rating: 4.6 out of 5
 31.5 total hours
 520 lectures
 All Levels
-Current price
-E£249.99
-Original Price
-E£1,899.99
 Bestseller
 ================================
 R Programming A-Z™: R For Data Science With Real Exercises!
@@ -59,10 +47,6 @@ Rating: 4.6 out of 5
 10.5 total hours
 80 lectures
 All Levels
-Current price
-E£349.99
-Original Price
-E£2,999.99
 Bestseller
 ================================
 Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Prize
@@ -76,10 +60,7 @@ Rating: 4.6 out of 5
 22.5 total hours
 189 lectures
 All Levels
-Current price
-E£349.99
-Original Price
-E£2,599.99
+Error loading price
 Bestseller
 ================================
 Statistics for Data Science and Business Analysis
@@ -93,10 +74,7 @@ Rating: 4.5 out of 5
 5 total hours
 92 lectures
 All Levels
-Current price
-E£249.99
-Original Price
-E£1,699.99
+Error loading price
 Bestseller
 ================================
 Artificial Intelligence A-Z 2024: Build 7 AI + LLM & ChatGPT
@@ -110,10 +88,7 @@ Rating: 4.4 out of 5
 15.5 total hours
 129 lectures
 All Levels
-Current price
-E£299.99
-Original Price
-E£2,499.99
+Error loading price
 Bestseller
 ================================
 Data Science A-Z: Hands-On Exercises & ChatGPT Prize [2024]
@@ -127,10 +102,7 @@ Rating: 4.6 out of 5
 21 total hours
 217 lectures
 All Levels
-Current price
-E£349.99
-Original Price
-E£2,799.99
+Error loading price
 ================================
 Machine Learning, Data Science and Generative AI with Python
 Complete hands-on machine learning and GenAI tutorial with data science, Tensorflow, GPT, OpenAI, and neural networks
@@ -143,10 +115,7 @@ Rating: 4.7 out of 5
 20.5 total hours
 147 lectures
 Beginner
-Current price
-E£299.99
-Original Price
-E£2,299.99
+Error loading price
 ================================
 Python A-Z™: Python For Data Science With Real Exercises!
 Programming In Python For Data Analytics And Data Science. Learn Statistical Analysis, Data Mining And Visualization
@@ -159,10 +128,7 @@ Rating: 4.6 out of 5
 11 total hours
 73 lectures
 All Levels
-Current price
-E£299.99
-Original Price
-E£2,299.99
+Error loading price
 ================================
 Spark and Python for Big Data with PySpark
 Learn how to use Spark with Python, including Spark Streaming, Machine Learning, Spark 2.0 DataFrames and more!
@@ -175,10 +141,7 @@ Rating: 4.5 out of 5
 10.5 total hours
 67 lectures
 Intermediate
-Current price
-E£399.99
-Original Price
-E£2,799.99
+Error loading price
 Bestseller
 ================================
 Complete A.I. & Machine Learning, Data Science Bootcamp
@@ -192,10 +155,7 @@ Rating: 4.6 out of 5
 44 total hours
 384 lectures
 All Levels
-Current price
-E£249.99
-Original Price
-E£2,099.99
+Error loading price
 ================================
 Data Analysis with Pandas and Python
 Analyze data quickly and easily with Python's powerful pandas library! All datasets included --- beginners welcome!
@@ -208,10 +168,7 @@ Rating: 4.7 out of 5
 19.5 total hours
 141 lectures
 All Levels
-Current price
-E£299.99
-Original Price
-E£2,499.99
+Error loading price
 Bestseller
 ================================
 Machine Learning for Absolute Beginners - Level 1
@@ -225,10 +182,7 @@ Rating: 4.5 out of 5
 4.5 total hours
 59 lectures
 Beginner
-Current price
-E£249.99
-Original Price
-E£1,299.99
+Error loading price
 ================================
 LangChain- Develop LLM powered applications with LangChain
 Learn LangChain by building FAST a real world generative ai LLM powered application LLM (Python, Latest Version 0.3.0)
@@ -241,10 +195,7 @@ Rating: 4.6 out of 5
 9.5 total hours
 80 lectures
 Intermediate
-Current price
-E£249.99
-Original Price
-E£1,299.99
+Error loading price
 Bestseller
 ================================
 NLP - Natural Language Processing with Python
@@ -258,9 +209,6 @@ Rating: 4.5 out of 5
 11.5 total hours
 80 lectures
 Intermediate
-Current price
-E£399.99
-Original Price
-E£3,099.99
+Error loading price
 Bestseller
 ================================
